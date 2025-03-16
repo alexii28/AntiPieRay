@@ -70,7 +70,7 @@ Path pathInRoot(String str) {
 /* Properties */
 
 // set group to root project group
-group rootProject.group
+group = rootProject.group
 
 /* Minecraft Paperweight Configuration */
 
@@ -160,7 +160,7 @@ tasks {
     if (hasMc())
         mcS = "+" + project.versionMC
     String fn = project.name + "-" + project.version + mcS + ".jar"
-    outputFile(fileInRoot("builds/" + fn))
+    outputFile = fileInRoot("builds/" + fn)
 }
 
 /* General Dependencies */
